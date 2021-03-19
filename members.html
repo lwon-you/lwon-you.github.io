@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원목록</title>
+    <link rel="stylesheet" href="css/members.css">
+    <link rel="import" href="login.html">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            // 페이지 최초 방문시, entries를 조회한다.
+            showTable();
+        });
+    </script>
+    <script>
+        function showTable(){
+            var members = JSON.parse(localStorage.getItem("members")) || [];
+    
+            var $table = $("#members-tb");
+    
+            $table.html("<tr><th>순서</th><th>아이디</th><th>가입 시간</th></tr>");
+            
+            if(members.length){
+                $.each(members, function(i, member){
+                    var $tr = $("<tr>");
+                    $tr
+                        .append("<td>" + (i + 1) + "</td>")
+                        .append("<td>" + member.id + "</td>")
+                        .append("<td>" + member.log + "</td>")
+                        .appendTo($table);
+                })
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="tb_wrapper">
+        <table id="members-tb"></table>
+    </div>
+</body>
+</html>

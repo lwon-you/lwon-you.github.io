@@ -1,0 +1,56 @@
+body{
+    margin-top: 170px;
+}
+.wrapper{
+    width: 512px;
+    height: 628px;
+    /* background-color: #000; */
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+.wrapper h1{
+    text-align: center;
+    line-height: 128px;
+}
+
+.signUp{
+    color:rgb(4, 0, 80);
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.frmWrapper{
+    width: 350px;
+    padding: 0px;
+    margin: 0 auto;
+    height: 365px;
+}
+#id, #pwd{
+    border: none;
+    border-bottom: 1.5px solid gray;
+    opacity: 0.5;
+    width: 98%;
+    padding: 2px;
+    height: 20px;
+    margin-bottom: 50px;
+}
+.submit{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #8f7b6a;
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+[name=input]{
+    margin-top : 10px;
+}
+#back{
+    position: relative;
+    left: 430px;
+    top: 20px;
+    text-decoration: none;
+    color: slategrey;
+    opacity: 0.5;
+}

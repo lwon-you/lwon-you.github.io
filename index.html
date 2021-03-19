@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인 홈페이지 프로젝트</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+</head>
+<body>
+    <!-- ## 개인 Homepage Project
+        다음의 페이지를 링크로 연결시키되, 페이지 구성에 창의적 아이디어가 있다면, 적용가능함.
+        * landing page(파일명(모두 소문자): index.html)
+        * 자기소개 page
+        * 여행 page(본인의 관심사 page로 변경가능)
+        * 개발자 roadmap page
+        * 회원가입 page
+        기능
+        * 회원가입: form태그와 디자인 먼저 구현후, web-storage 학습후 완성할 것.
+        * 회원목록열람
+        * 로그인(선택)
+        제출시 유의사항
+        본인영문이름폴더(예: honggildong 공백없음)를 루트폴더로 삼고,  관련파일 모두 위치시킬것
+        (서버프로그램에서 참조하는 파일명은 대소문자를 구분함)
+        (현재파일기준으로 상대경로로 파일경로 작성. /(슬래쉬)로 경로 시작하지 말것)
+        * /images/이미지파일들
+        * /css/css파일들
+        * /js/js파일들
+        발표환경은 1024*768이므로 규격 맞출것. -->
+    <label id="arrow">TOP</label>
+    <header>
+        <nav>
+            <span id="menu_exit"><a href="javascript:void(0)">x</a></span>
+            <a href="#menuHome" class="menu" id="menuHome" data-target="menuHome">Home</a>
+            <br>
+            <a href="javascript:void(0)" class="menu" id="menuPage">My page</a> 
+            <br>
+            <a href="javascript:void(0)" class="menu" id="menuFavor">My favorite</a>
+            <br>
+            <a href="javascript:void(0)" class="menu" id="menuRoad">Roadmap</a>
+            <br>
+            <a href="javascript:void(0)" class="menu" id="menuLogin">Login</a>
+        </nav>
+    </header>
+    
+    <section class="sec home">
+        <span id="menuIcon">
+            <a href="javascript:void(0)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </span>
+        <div class="wrapper p1">
+            <p>개발자가 되고싶다</p>
+        </div>
+        <div class="wrapper p2">
+            <p>그런데 그게 쉽지가 않다</p>
+        </div>
+        <div class="wrapper p3">
+            <p>이럴수가</p>
+        </div>
+        <div class="wrapper p4">
+            <p>열심히 좀 할껄</p>
+        </div>
+        <div class="wrapper p5">
+            <p>여기가 <span>Home </span>입니다</p>
+        </div>
+        <div class="wrapper p6">
+            <p>정신나갈것같아</p>
+        </div>
+        <div class="wrapper p7">
+            <p>아직 늦지 않았다</p>
+        </div>
+        <div class="wrapper p8">
+            <p>무야호</p>
+        </div>
+        
+    </section>
+
+    <section class="sec myPage">
+        <div class="title-wrapper">
+            <p class="p5"><span>myPage</span></p>
+        </div>
+        <div class="me">
+            <img src="images/me.jpg" alt="본인사진">
+        </div>
+        <div class="backimg">
+            <img src="images/back.jpg" alt="틀">
+        </div>
+        <div class="infor-wrapper">
+            <div class="infor">
+                <p class="inforT">이름</p>
+                <p class="inforC">이원영</p>               
+            </div>
+            <div class="infor">
+                <p class="inforT">나이</p>
+                <p class="inforC">30</p>               
+            </div>
+            <div class="infor">
+                <p class="inforT">거주지</p>
+                <p class="inforC">관악구 신림동</p>               
+            </div>
+            <div class="infor">
+                <p class="inforT">성격</p>
+                <p class="inforC">게으름</p>               
+            </div>
+            <div class="infor">
+                <p class="inforT">취미</p>
+                <p class="inforC">음주, 가무</p>               
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="sec myFavor">
+        <div class="title-wrapper">
+            <p class="p5"><span>myFavor</span></p>
+        </div>
+            <div class="favor1">
+                <img src="images/messi.png" alt="메시">
+            </div>
+            <div class="favor2">
+                <img src="images/파리 생제르맹.png" alt="파리생제르망">
+            </div>
+            <div class="favor3">
+                <img src="images/soccer.jpg" alt="축구장">
+            </div>
+            
+    </section>
+
+    <section class="sec roadMap">
+        <div class="title-wrapper">
+            <p class="p5"><span>Roadmap</span></p>
+        </div>
+
+        <div class="mapimg1">
+            <img src="images/road1.jpg" alt="">
+        </div>
+        <div class="mapimg2">
+            <img src="images/road2.jpg" alt="">
+        </div>
+        <div class="mapimg3">
+            <img src="images/road3.png" alt="">
+        </div>
+
+        <div class="mapCenter">Pro gramer</div>
+
+        <div class="mapimg4">
+            <img src="images/road4.png" alt="">
+        </div>
+        <div class="mapimg5">
+            <img src="images/road5.png" alt="">
+        </div>
+        <div class="mapimg6">
+            <img src="images/road6.png" alt="">
+        </div>
+    </section>
+    
+    <script>
+        // 메뉴 열림
+        $("#menuIcon").on("click",function(){
+            $("nav")
+                .animate({
+                    opacity : '0.5'
+                },1000)
+                // .css("opacity",0.5)
+                .css("display","block");
+        });
+        // 메뉴 닫힘
+        $("#menu_exit").on("click",function(){
+            $("nav")
+                .css("display","none")
+                .animate({
+                    opacity : '0'
+                },100);
+        });
+        // home 으로 이동
+        $("#menuHome").on("click",function(){
+            var scrollPosition = $(".home").offset().top;
+            $("html").animate({
+                scrollTop: (scrollPosition-80)
+            }, 1000);
+        });
+        $("#arrow").on("click",function(){
+            var scrollPosition = $(".home").offset().top;
+            $("html").animate({
+                scrollTop: (scrollPosition-80)
+            }, 1000);
+        });
+
+        // my page 이동
+        $("#menuPage").on("click",function(){
+            var scrollPosition = $(".myPage").offset().top;
+            $("html").animate({
+                scrollTop: (scrollPosition-80)
+            }, 1000);
+        });
+        // Favorit 이동
+        $("#menuFavor").on("click",function(){
+            var scrollPosition = $(".myFavor").offset().top;
+            $("html").animate({
+                scrollTop: (scrollPosition-80)
+            }, 1000);
+        });
+        // Roadmap 이동
+        $("#menuRoad").on("click",function(){
+            var scrollPosition = $(".roadMap").offset().top;
+            $("html").animate({
+                scrollTop: (scrollPosition-80)
+            }, 1000);
+        });
+
+        // Login 페이지 이동
+        $("#menuLogin").on("click",function(){
+           open("login.html","_self");
+        });
+    </script>
+</body>
+</html>

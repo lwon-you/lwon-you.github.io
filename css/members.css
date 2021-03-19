@@ -1,0 +1,16 @@
+#members-tb{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin : 10px auto;
+    width: 100%;
+    text-align: center;
+}
+#members-tb th, #members-tb td{
+    border : 1px solid #000;
+    padding: 5px;
+}
+#tb_wrapper{
+    width: 480px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
